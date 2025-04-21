@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('Hello from DevOps with Docker!</h1>')
+  res.send('Hello again from DevOps with Docker!</h1>')
 })
 
 app.get('/ping', (req, res) => {
