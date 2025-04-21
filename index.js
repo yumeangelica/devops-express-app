@@ -2,7 +2,11 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+  res.send('Hello from DevOps with Docker!</h1>')
+})
+
+app.get('/ping', (req, res) => {
+  res.json({ message: 'pong' })
 })
 
 const PORT = 8080
